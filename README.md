@@ -12,6 +12,8 @@ steps:
       # Follow redirects, or just report success on 3xx status codes
       follow-redirect: no # Optional, defaults to "no"
       # Fail this action after this many failed attempts
+      insecure: fale # Optional, defaults to "false"
+      # Allow to reach insecure locations
       max-attempts: 3 # Optional, defaults to 1
       # Delay between retries
       retry-delay: 5s # Optional, only applicable to max-attempts > 1

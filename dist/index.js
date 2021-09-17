@@ -5340,6 +5340,7 @@ async function run() {
   const maxAttemptsString = core.getInput("max-attempts");
   const retryDelay = core.getInput("retry-delay");
   const followRedirect = core.getBooleanInput("follow-redirect");
+  const insecure = core.getBooleanInput("insecure");
   const retryAll = core.getBooleanInput("retry-all");
 
   const urls = urlString.split("|");
@@ -5366,6 +5367,7 @@ async function run() {
       retryDelaySeconds,
       retryAll,
       followRedirect,
+      insecure
     });
   }
 
